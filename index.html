@@ -1,0 +1,934 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mujtaba Khan | Software Development Engineer</title>
+  <meta name="description" content="Portfolio of Mujtaba Abdul Haque Khan — Software Development Engineer specializing in AWS Cloud, Backend Engineering, AI & Distributed Systems. Currently at Amazon, Seattle.">
+  <meta name="keywords" content="Mujtaba Khan, Software Engineer, AWS, Backend, Cloud, AI, Distributed Systems, Amazon, Seattle">
+  <meta name="author" content="Mujtaba Abdul Haque Khan">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Mujtaba Khan | Software Development Engineer">
+  <meta property="og:description" content="Building scalable cloud platforms, intelligent AI systems, and impactful software solutions.">
+  <meta property="og:type" content="website">
+
+  <!-- Google Fonts: Inter -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- ===================== ICON SPRITE (self-contained, no CDN) ===================== -->
+  <svg aria-hidden="true" style="position:absolute;width:0;height:0;overflow:hidden;" focusable="false">
+    <defs>
+      <symbol id="icon-send" viewBox="0 0 24 24"><path d="m22 2-7 20-4-9-9-4Z"/><path d="M22 2 11 13"/></symbol>
+      <symbol id="icon-github" viewBox="0 0 24 24"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"/><path d="M9 18c-4.51 2-5-2-7-2"/></symbol>
+      <symbol id="icon-linkedin" viewBox="0 0 24 24"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect width="4" height="12" x="2" y="9"/><circle cx="4" cy="4" r="2"/></symbol>
+      <symbol id="icon-mail" viewBox="0 0 24 24"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></symbol>
+      <symbol id="icon-calendar" viewBox="0 0 24 24"><path d="M8 2v4"/><path d="M16 2v4"/><rect width="18" height="18" x="3" y="4" rx="2"/><path d="M3 10h18"/></symbol>
+      <symbol id="icon-briefcase" viewBox="0 0 24 24"><rect width="20" height="14" x="2" y="7" rx="2"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/></symbol>
+      <symbol id="icon-map-pin" viewBox="0 0 24 24"><path d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0"/><circle cx="12" cy="10" r="3"/></symbol>
+      <symbol id="icon-clock" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></symbol>
+      <symbol id="icon-award" viewBox="0 0 24 24"><circle cx="12" cy="8" r="6"/><path d="M15.477 12.89 17 22l-5-3-5 3 1.523-9.11"/></symbol>
+      <symbol id="icon-external-link" viewBox="0 0 24 24"><path d="M15 3h6v6"/><path d="M10 14 21 3"/><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/></symbol>
+      <symbol id="icon-phone" viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.36 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></symbol>
+      <symbol id="icon-chevron-up" viewBox="0 0 24 24"><path d="m18 15-6-6-6 6"/></symbol>
+      <symbol id="icon-check" viewBox="0 0 24 24"><path d="M20 6 9 17l-5-5"/></symbol>
+    </defs>
+  </svg>
+
+  <!-- ===================== NAVBAR ===================== -->
+  <nav class="navbar" id="navbar">
+    <div class="container">
+      <a href="#hero" class="nav-logo">MK</a>
+      <div class="nav-links" id="navLinks">
+        <a href="#about">About</a>
+        <a href="#experience">Experience</a>
+        <a href="#education">Education</a>
+        <a href="#projects">Projects</a>
+        <a href="#skills">Skills</a>
+        <a href="#certifications">Certifications</a>
+        <a href="#achievements">Achievements</a>
+        <a href="#contact">Contact</a>
+      </div>
+      <div class="hamburger" id="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+    <div class="mobile-overlay" id="mobileOverlay"></div>
+  </nav>
+
+  <!-- ===================== HERO ===================== -->
+  <section class="hero" id="hero">
+    <div class="hero-particles" id="heroParticles"></div>
+    <div class="hero-content">
+      <div class="hero-text">
+        <span class="hero-greeting">Hello, I'm</span>
+        <h1 class="hero-name">
+          Mujtaba<br><span class="highlight">Khan</span>
+        </h1>
+        <div class="hero-title-wrapper">
+          <p class="hero-title">
+            <span class="typing-text" id="typingText"></span>
+          </p>
+        </div>
+        <p class="hero-description">
+          Building scalable cloud platforms, intelligent AI systems, and impactful software solutions.
+        </p>
+        <div class="hero-cta">
+          <a href="#contact" class="btn btn-primary">
+            <svg class="icon" style="width:18px;height:18px;"><use href="#icon-send"></use></svg>
+            Get in Touch
+          </a>
+          <a href="https://github.com/mkhan6678" target="_blank" rel="noopener noreferrer" class="btn btn-outline">
+            <svg class="icon" style="width:18px;height:18px;"><use href="#icon-github"></use></svg>
+            GitHub
+          </a>
+        </div>
+        <div class="hero-social">
+          <a href="https://github.com/mkhan6678" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+            <svg class="icon" style="width:18px;height:18px;"><use href="#icon-github"></use></svg>
+          </a>
+          <a href="https://linkedin.com/in/mujtaba-abdul-haque-984109281/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+            <svg class="icon" style="width:18px;height:18px;"><use href="#icon-linkedin"></use></svg>
+          </a>
+          <a href="mailto:mujtabak65@gmail.com" aria-label="Email">
+            <svg class="icon" style="width:18px;height:18px;"><use href="#icon-mail"></use></svg>
+          </a>
+        </div>
+      </div>
+      <div class="hero-image-wrapper">
+        <div class="hero-image-container">
+          <img src="certificates/mujtaba-profile.jpeg" alt="Mujtaba Abdul Haque Khan" loading="eager">
+          <div class="hero-orbit"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="section-divider"></div>
+
+  <!-- ===================== ABOUT ===================== -->
+  <section class="about" id="about">
+    <div class="container">
+      <div class="section-header reveal">
+        <h2>About Me</h2>
+        <p>Software Development Engineer building impactful systems at scale.</p>
+      </div>
+      <div class="about-grid">
+        <div class="about-image-side reveal">
+          <div class="about-photo-wrapper">
+            <img src="certificates/mujtaba-profile.jpeg" alt="Mujtaba Khan" loading="lazy">
+          </div>
+          <div class="stats-grid">
+            <div class="stat-card">
+              <div class="stat-number" data-count="3">0</div>
+              <div class="stat-label">Years Experience</div>
+            </div>
+            <div class="stat-card">
+              <div class="stat-number" data-count="2">0</div>
+              <div class="stat-label">Certifications</div>
+            </div>
+            <div class="stat-card">
+              <div class="stat-number" data-count="10">0</div>
+              <div class="stat-label">Projects</div>
+            </div>
+            <div class="stat-card">
+              <div class="stat-number" data-count="4">0</div>
+              <div class="stat-label">Awards</div>
+            </div>
+          </div>
+        </div>
+        <div class="about-content reveal reveal-delay-1">
+          <p>
+            I am a Software Development Engineer with a strong background in backend engineering, cloud computing, artificial intelligence, and distributed systems. At Amazon, I have led the development of large-scale services including real-time Kafka processing systems, Retrieval-Augmented Generation (RAG) AI solutions, strategic analytics platforms, and revenue-generating advertising products serving global marketplaces.
+          </p>
+          <p>
+            My technical expertise includes Java, Python, AWS, Apache Spark, Kafka, OpenSearch, Bedrock, and modern DevOps practices. I hold a Master's degree in Computer Science from Seattle University, where I focused on software architecture, cloud computing, and distributed systems. Throughout my career, I have consistently delivered measurable business results by combining strong technical execution with product-focused thinking. I thrive in fast-paced environments where innovation, ownership, and customer impact are valued.
+          </p>
+          <div class="mission-vision">
+            <div class="mv-card">
+              <h4>🎯 Mission</h4>
+              <p>To build scalable, intelligent, and reliable software systems that solve meaningful business problems while creating measurable impact for customers and organizations.</p>
+            </div>
+            <div class="mv-card">
+              <h4>🔭 Vision</h4>
+              <p>To become a leading engineer at the intersection of cloud computing, distributed systems, and artificial intelligence, driving innovation that transforms how businesses operate at scale.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="section-divider"></div>
+
+  <!-- ===================== EXPERIENCE ===================== -->
+  <section class="experience" id="experience">
+    <div class="container">
+      <div class="section-header reveal">
+        <h2>Work Experience</h2>
+        <p>A track record of delivering impactful engineering solutions at scale.</p>
+      </div>
+      <div class="timeline">
+
+        <!-- Experience 1: Amazon SDE -->
+        <div class="timeline-item reveal">
+          <div class="timeline-dot"></div>
+          <div class="timeline-card">
+            <div class="timeline-header">
+              <div>
+                <h3>Software Development Engineer</h3>
+                <p class="company">Amazon</p>
+              </div>
+            </div>
+            <div class="timeline-meta">
+              <span class="timeline-badge">
+                <svg class="icon" style="width:13px;height:13px;"><use href="#icon-calendar"></use></svg>
+                June 2025 – Present
+              </span>
+              <span class="timeline-badge">
+                <svg class="icon" style="width:13px;height:13px;"><use href="#icon-briefcase"></use></svg>
+                Full-Time
+              </span>
+              <span class="timeline-badge">
+                <svg class="icon" style="width:13px;height:13px;"><use href="#icon-map-pin"></use></svg>
+                Seattle, WA
+              </span>
+            </div>
+            <div class="timeline-responsibilities">
+              <h4>Key Responsibilities</h4>
+              <ul>
+                <li>Designed and delivered AdsCampaignStreamProcessor, a real-time Kafka consumer service deployed on AWS ECS Fargate.</li>
+                <li>Built AIRSOlympusAIAgent using Amazon Bedrock, OpenSearch, Lambda, and RAG architecture.</li>
+                <li>Developed DSP Upsell automation pipelines using Apache Spark, Kinesis, OpenSearch, and Java services.</li>
+                <li>Contributed to PSA strategic opportunity platform using EMR Serverless, EventBridge, Lambda, and AppConfig.</li>
+              </ul>
+            </div>
+            <div class="timeline-achievements">
+              <h4>Key Achievements</h4>
+              <ul>
+                <li>Eliminated 300–600 invalid opportunities daily and recovered 2,000–4,000 engineering hours annually.</li>
+                <li>Delivered AI-powered search and explanation capabilities across 13 global marketplaces.</li>
+                <li>Enabled $30M+ previously uncaptured Self-Service advertising revenue opportunities.</li>
+                <li>Processed approximately 300K daily campaign events and 750K+ strategic opportunity records.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <!-- Experience 2: Hailent Consulting -->
+        <div class="timeline-item reveal">
+          <div class="timeline-dot"></div>
+          <div class="timeline-card">
+            <div class="timeline-header">
+              <div>
+                <h3>Junior AWS Cloud Engineer</h3>
+                <p class="company">Hailent Consulting</p>
+              </div>
+            </div>
+            <div class="timeline-meta">
+              <span class="timeline-badge">
+                <svg class="icon" style="width:13px;height:13px;"><use href="#icon-calendar"></use></svg>
+                Sept 2024 – June 2025
+              </span>
+              <span class="timeline-badge">
+                <svg class="icon" style="width:13px;height:13px;"><use href="#icon-briefcase"></use></svg>
+                Full-Time
+              </span>
+              <span class="timeline-badge">
+                <svg class="icon" style="width:13px;height:13px;"><use href="#icon-map-pin"></use></svg>
+                USA
+              </span>
+            </div>
+            <div class="timeline-responsibilities">
+              <h4>Key Responsibilities</h4>
+              <ul>
+                <li>Designed and deployed AWS infrastructure using EC2, S3, and VPC.</li>
+                <li>Led migration of on-premises workloads to AWS cloud environments.</li>
+                <li>Implemented IAM security controls and CloudWatch monitoring.</li>
+                <li>Built CI/CD pipelines using AWS CodePipeline and CloudFormation.</li>
+              </ul>
+            </div>
+            <div class="timeline-achievements">
+              <h4>Key Achievements</h4>
+              <ul>
+                <li>Reduced deployment time by 40%.</li>
+                <li>Reduced infrastructure costs by 30%.</li>
+                <li>Automated 80% of infrastructure provisioning.</li>
+                <li>Reduced deployment errors by 25%.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <!-- Experience 3: Speroware SDE -->
+        <div class="timeline-item reveal">
+          <div class="timeline-dot"></div>
+          <div class="timeline-card">
+            <div class="timeline-header">
+              <div>
+                <h3>Software Developer</h3>
+                <p class="company">Speroware Technologies</p>
+              </div>
+            </div>
+            <div class="timeline-meta">
+              <span class="timeline-badge">
+                <svg class="icon" style="width:13px;height:13px;"><use href="#icon-calendar"></use></svg>
+                May 2021 – July 2022
+              </span>
+              <span class="timeline-badge">
+                <svg class="icon" style="width:13px;height:13px;"><use href="#icon-briefcase"></use></svg>
+                Full-Time
+              </span>
+              <span class="timeline-badge">
+                <svg class="icon" style="width:13px;height:13px;"><use href="#icon-map-pin"></use></svg>
+                Bangalore, India
+              </span>
+            </div>
+            <div class="timeline-responsibilities">
+              <h4>Key Responsibilities</h4>
+              <ul>
+                <li>Developed responsive React and Angular applications.</li>
+                <li>Designed and integrated RESTful APIs hosted on AWS.</li>
+                <li>Managed deployments using EC2 and S3.</li>
+                <li>Implemented Redux and NgRx state management.</li>
+              </ul>
+            </div>
+            <div class="timeline-achievements">
+              <h4>Key Achievements</h4>
+              <ul>
+                <li>Improved user engagement by 20%.</li>
+                <li>Increased uptime by 30%.</li>
+                <li>Reduced bugs by 25%.</li>
+                <li>Achieved over 90% automated test coverage.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <!-- Experience 4: Speroware Intern -->
+        <div class="timeline-item reveal">
+          <div class="timeline-dot"></div>
+          <div class="timeline-card">
+            <div class="timeline-header">
+              <div>
+                <h3>Software Developer Intern</h3>
+                <p class="company">Speroware Technologies</p>
+              </div>
+            </div>
+            <div class="timeline-meta">
+              <span class="timeline-badge">
+                <svg class="icon" style="width:13px;height:13px;"><use href="#icon-calendar"></use></svg>
+                Feb 2021 – May 2021
+              </span>
+              <span class="timeline-badge">
+                <svg class="icon" style="width:13px;height:13px;"><use href="#icon-briefcase"></use></svg>
+                Internship
+              </span>
+              <span class="timeline-badge">
+                <svg class="icon" style="width:13px;height:13px;"><use href="#icon-map-pin"></use></svg>
+                Bangalore, India
+              </span>
+            </div>
+            <div class="timeline-responsibilities">
+              <h4>Key Responsibilities</h4>
+              <ul>
+                <li>Contributed to full-stack e-commerce development using Node.js and Express.</li>
+                <li>Integrated payment, shopping cart, and product catalog functionality.</li>
+                <li>Improved frontend user experience and responsiveness.</li>
+                <li>Supported SEO optimization initiatives.</li>
+              </ul>
+            </div>
+            <div class="timeline-achievements">
+              <h4>Key Achievements</h4>
+              <ul>
+                <li>Increased user retention by 15%.</li>
+                <li>Improved search visibility by 10%.</li>
+                <li>Improved mobile engagement by 20%.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <div class="section-divider"></div>
+
+  <!-- ===================== EDUCATION ===================== -->
+  <section class="education" id="education">
+    <div class="container">
+      <div class="section-header reveal">
+        <h2>Education</h2>
+        <p>Strong academic foundation in Computer Science and Software Engineering.</p>
+      </div>
+      <div class="education-grid">
+
+        <div class="education-card reveal">
+          <div class="education-icon">🎓</div>
+          <h3>Master of Science in Computer Science</h3>
+          <p class="institution">Seattle University</p>
+          <div class="edu-meta">
+            <span class="edu-badge">
+              <svg class="icon" style="width:12px;height:12px;"><use href="#icon-calendar"></use></svg>
+              Sept 2022 – June 2024
+            </span>
+            <span class="edu-badge">
+              <svg class="icon" style="width:12px;height:12px;"><use href="#icon-clock"></use></svg>
+              Full-Time
+            </span>
+          </div>
+          <ul class="highlights">
+            <li>Specialized in Software Engineering and Cloud Computing.</li>
+            <li>Coursework in Distributed Systems, Software Architecture, and Testing.</li>
+            <li>Applied AI and cloud-native development across academic projects.</li>
+          </ul>
+        </div>
+
+        <div class="education-card reveal reveal-delay-1">
+          <div class="education-icon">🎓</div>
+          <h3>Bachelor of Science in Computer Science</h3>
+          <p class="institution">Savitribai Phule Pune University</p>
+          <div class="edu-meta">
+            <span class="edu-badge">
+              <svg class="icon" style="width:12px;height:12px;"><use href="#icon-calendar"></use></svg>
+              July 2018 – April 2021
+            </span>
+            <span class="edu-badge">
+              <svg class="icon" style="width:12px;height:12px;"><use href="#icon-clock"></use></svg>
+              Full-Time
+            </span>
+          </div>
+          <ul class="highlights">
+            <li>Strong foundation in algorithms, programming, and software development.</li>
+            <li>Dean's List recognition.</li>
+            <li>Active student leadership involvement.</li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <div class="section-divider"></div>
+
+  <!-- ===================== PROJECTS ===================== -->
+  <section class="projects" id="projects">
+    <div class="container">
+      <div class="section-header reveal">
+        <h2>Projects</h2>
+        <p>From real-time distributed pipelines at Amazon to healthcare apps and AI-powered fraud detection — a full picture of what I build.</p>
+      </div>
+
+      <!-- Amazon Projects -->
+      <div class="project-group-label reveal">🏢 Amazon — Software Development Engineer</div>
+      <div class="projects-grid">
+
+        <div class="project-card reveal">
+          <span class="project-type">Real-Time Distributed System</span>
+          <h3>AdsCampaignStreamProcessor</h3>
+          <p class="project-company">Amazon · 2025–Present</p>
+          <p>End-to-end real-time Kafka consumer service that eliminates stale ad recommendations in Global Action Center by processing ~300K daily campaign status events.</p>
+          <ul class="project-outcomes">
+            <li>Recovered 2,000–4,000 engineering hours annually</li>
+            <li>Reduced invalid opportunities from ~300–600/day to near zero</li>
+            <li>Conditional DynamoDB writes with TTL-based expiry</li>
+            <li>Covers SP, SB, SD, and STV program types</li>
+          </ul>
+          <div class="project-tech">
+            <span class="tech-tag">Java</span>
+            <span class="tech-tag">Kafka</span>
+            <span class="tech-tag">DynamoDB</span>
+            <span class="tech-tag">ECS Fargate</span>
+            <span class="tech-tag">AWS CDK</span>
+            <span class="tech-tag">CloudWatch EMF</span>
+          </div>
+        </div>
+
+        <div class="project-card reveal reveal-delay-1">
+          <span class="project-type">Generative AI / RAG Agent</span>
+          <h3>AIRSOlympusAIAgent</h3>
+          <p class="project-company">Amazon · 2025–Present</p>
+          <p>Serverless AI agent on AWS Lambda providing LLM-powered natural language search and RAG-based structured explanations across 13 global marketplaces in NA and EU.</p>
+          <ul class="project-outcomes">
+            <li>Natural language → OpenSearch query via Bedrock</li>
+            <li>RAG with Bedrock Knowledge Bases (0.7 relevance threshold)</li>
+            <li>Singleton OpenSearch clients for warm-start efficiency</li>
+            <li>91.16% statement coverage · 96.77% function coverage</li>
+          </ul>
+          <div class="project-tech">
+            <span class="tech-tag">AWS Lambda</span>
+            <span class="tech-tag">Amazon Bedrock</span>
+            <span class="tech-tag">OpenSearch</span>
+            <span class="tech-tag">RAG</span>
+            <span class="tech-tag">TypeScript</span>
+            <span class="tech-tag">API Gateway</span>
+          </div>
+        </div>
+
+        <div class="project-card reveal reveal-delay-2">
+          <span class="project-type">Revenue Optimization Pipeline</span>
+          <h3>DSP Upsell</h3>
+          <p class="project-company">Amazon · 2025–Present</p>
+          <p>Automated pipeline surfacing DSP budget upsell opportunities in Global Action Center, targeting $30M+ in previously uncaptured Self-Service revenue across all 4 advertising regions.</p>
+          <ul class="project-outcomes">
+            <li>Covers 12 DSP ad product types (NA, EU, FE, ZAZ)</li>
+            <li>Full-stack: Java Spring backend + Angular UI + AWS CDK</li>
+            <li>Fixed critical enum deserialization bugs across 6+ packages</li>
+            <li>First-ever automated SS DSP upsell coverage</li>
+          </ul>
+          <div class="project-tech">
+            <span class="tech-tag">Apache Spark</span>
+            <span class="tech-tag">Kinesis</span>
+            <span class="tech-tag">OpenSearch</span>
+            <span class="tech-tag">Java</span>
+            <span class="tech-tag">Angular</span>
+            <span class="tech-tag">AWS CDK</span>
+          </div>
+        </div>
+
+        <div class="project-card reveal reveal-delay-3">
+          <span class="project-type">Strategic Analytics Platform</span>
+          <h3>PSA — Proactive Strategies & Actions</h3>
+          <p class="project-company">Amazon · 2025–Present</p>
+          <p>Full-funnel strategic opportunity platform on EMR Serverless evaluating 30 benchmark rules across ~750K records per run, with auto-generated PowerPoint decks and Salesforce widget embedding.</p>
+          <ul class="project-outcomes">
+            <li>Covers Awareness, Consideration and Conversion objectives</li>
+            <li>FlipIndex Lambda for zero-downtime OpenSearch alias swaps</li>
+            <li>AppConfig-driven runtime rule threshold updates</li>
+            <li>Cross-org collaboration across 6+ teams</li>
+          </ul>
+          <div class="project-tech">
+            <span class="tech-tag">EMR Serverless</span>
+            <span class="tech-tag">Spark</span>
+            <span class="tech-tag">OpenSearch</span>
+            <span class="tech-tag">Lambda</span>
+            <span class="tech-tag">EventBridge</span>
+            <span class="tech-tag">AppConfig</span>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Speroware Projects -->
+      <div class="project-group-label reveal" style="margin-top: 3rem;">🏥 Speroware Technologies — Software Developer</div>
+      <div class="projects-grid">
+
+        <div class="project-card reveal">
+          <span class="project-type">Healthcare · Mobile App</span>
+          <h3>Telemedicine Platform</h3>
+          <p class="project-company">Speroware · 2021–2022</p>
+          <p>Cross-platform telemedicine app enabling real-time video consultations for patients in rural areas with as low as 256 kbps connectivity. Implemented WebRTC with audio-only fallback mode.</p>
+          <ul class="project-outcomes">
+            <li>100,000+ teleconsultations supported</li>
+            <li>20,291 healthcare providers onboarded across 130 specialties</li>
+            <li>Audio-only fallback for low-bandwidth (256 kbps) environments</li>
+            <li>Reduced dependency-related delays by 40%</li>
+          </ul>
+          <div class="project-tech">
+            <span class="tech-tag">React Native</span>
+            <span class="tech-tag">Java</span>
+            <span class="tech-tag">WebRTC</span>
+            <span class="tech-tag">Firebase</span>
+            <span class="tech-tag">Spring Boot</span>
+            <span class="tech-tag">OAuth2</span>
+          </div>
+        </div>
+
+        <div class="project-card reveal reveal-delay-1">
+          <span class="project-type">AI/ML · Fraud Detection SDK</span>
+          <h3>Plug-and-Play Fraud Detection SDK</h3>
+          <p class="project-company">Speroware · 2021–2022</p>
+          <p>End-to-end SDK for deploying AI/ML fraud detection into both streaming and batch pipelines. Built a custom transformation library with YAML-based declarative pipeline configs for community extensibility.</p>
+          <ul class="project-outcomes">
+            <li>Improved fraud detection accuracy by 30%</li>
+            <li>Reduced client onboarding time by 70% via Apache Beam</li>
+            <li>YAML-based declarative configs for extensible pipelines</li>
+            <li>Supports rule-based filtering, feature extraction, anomaly detection</li>
+          </ul>
+          <div class="project-tech">
+            <span class="tech-tag">Python</span>
+            <span class="tech-tag">TensorFlow</span>
+            <span class="tech-tag">PyTorch</span>
+            <span class="tech-tag">Apache Beam</span>
+            <span class="tech-tag">Scikit-learn</span>
+            <span class="tech-tag">YAML</span>
+          </div>
+        </div>
+
+        <div class="project-card reveal reveal-delay-2">
+          <span class="project-type">HR Analytics · NLP Dashboard</span>
+          <h3>HR Retro Dashboard</h3>
+          <p class="project-company">Speroware · 2021–2022</p>
+          <p>In-house HR dashboard replacing expensive third-party survey tools by aggregating internal surveys with external Glassdoor and Kununu reviews, classified using BERT NLP sentiment analysis.</p>
+          <ul class="project-outcomes">
+            <li>90%+ BERT sentiment classification accuracy</li>
+            <li>Estimated €500,000 annual cost savings</li>
+            <li>Flexible MongoDB schema — Kununu integration added with minimal effort</li>
+            <li>Provided HR with richer, more candid employee insights</li>
+          </ul>
+          <div class="project-tech">
+            <span class="tech-tag">Angular</span>
+            <span class="tech-tag">Java</span>
+            <span class="tech-tag">GraphQL</span>
+            <span class="tech-tag">MongoDB</span>
+            <span class="tech-tag">BERT / NLP</span>
+            <span class="tech-tag">Apache Kafka</span>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- University / Independent Projects -->
+      <div class="project-group-label reveal" style="margin-top: 3rem;">🎓 Independent / University Projects</div>
+      <div class="projects-grid">
+
+        <div class="project-card reveal">
+          <span class="project-type">Cloud Automation · IaC</span>
+          <h3>AWS Infrastructure Automation</h3>
+          <p class="project-company">Seattle University · Student Developer · 2023–2024</p>
+          <p>Introduced modular AWS CloudFormation templates to automate infrastructure provisioning for university integration projects, replacing entirely manual setups across multiple departments.</p>
+          <ul class="project-outcomes">
+            <li>30% improvement in provisioning efficiency</li>
+            <li>Automated 80% of infrastructure tasks across departments</li>
+            <li>Parameterised templates for dev, staging, and production</li>
+            <li>Trained team members and authored best-practices documentation</li>
+          </ul>
+          <div class="project-tech">
+            <span class="tech-tag">CloudFormation</span>
+            <span class="tech-tag">IAM</span>
+            <span class="tech-tag">EventBridge</span>
+            <span class="tech-tag">AWS Batch</span>
+            <span class="tech-tag">YAML</span>
+            <span class="tech-tag">Azure DevOps</span>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <div class="section-divider"></div>
+
+  <!-- ===================== SKILLS ===================== -->
+  <section class="skills" id="skills">
+    <div class="container">
+      <div class="section-header reveal">
+        <h2>Technical Skills</h2>
+        <p>A comprehensive technology toolkit built through real-world engineering at scale.</p>
+      </div>
+      <div class="skills-grid">
+
+        <!-- Programming Languages -->
+        <div class="skill-category reveal">
+          <div class="skill-category-header">
+            <div class="skill-category-icon">💻</div>
+            <h3>Programming Languages</h3>
+          </div>
+          <div class="skill-list">
+            <div class="skill-item"><span class="skill-name">Java</span></div>
+            <div class="skill-item"><span class="skill-name">Python</span></div>
+            <div class="skill-item"><span class="skill-name">TypeScript</span></div>
+            <div class="skill-item"><span class="skill-name">C / C++</span></div>
+            <div class="skill-item"><span class="skill-name">C#</span></div>
+            <div class="skill-item"><span class="skill-name">HTML / CSS</span></div>
+          </div>
+        </div>
+
+        <!-- Cloud & DevOps -->
+        <div class="skill-category reveal reveal-delay-1">
+          <div class="skill-category-header">
+            <div class="skill-category-icon">☁️</div>
+            <h3>Cloud & DevOps</h3>
+          </div>
+          <div class="skill-list">
+            <div class="skill-item"><span class="skill-name">AWS (S3, EC2, Lambda, ECS, Kinesis, Bedrock, EMR, CloudWatch)</span></div>
+            <div class="skill-item"><span class="skill-name">Azure</span></div>
+            <div class="skill-item"><span class="skill-name">Docker / Kubernetes</span></div>
+            <div class="skill-item"><span class="skill-name">Terraform</span></div>
+            <div class="skill-item"><span class="skill-name">CI/CD · Jenkins</span></div>
+            <div class="skill-item"><span class="skill-name">AWS CDK / CloudFormation</span></div>
+          </div>
+        </div>
+
+        <!-- Backend & Distributed Systems -->
+        <div class="skill-category reveal reveal-delay-2">
+          <div class="skill-category-header">
+            <div class="skill-category-icon">⚙️</div>
+            <h3>Backend & Distributed Systems</h3>
+          </div>
+          <div class="skill-list">
+            <div class="skill-item"><span class="skill-name">Spring Boot</span></div>
+            <div class="skill-item"><span class="skill-name">Node.js / Express</span></div>
+            <div class="skill-item"><span class="skill-name">REST APIs · GraphQL</span></div>
+            <div class="skill-item"><span class="skill-name">Apache Kafka</span></div>
+            <div class="skill-item"><span class="skill-name">Apache Spark / Beam</span></div>
+            <div class="skill-item"><span class="skill-name">Microservices · .NET Core</span></div>
+          </div>
+        </div>
+
+        <!-- AI & Data -->
+        <div class="skill-category reveal reveal-delay-3">
+          <div class="skill-category-header">
+            <div class="skill-category-icon">🤖</div>
+            <h3>AI & Data</h3>
+          </div>
+          <div class="skill-list">
+            <div class="skill-item"><span class="skill-name">Amazon Bedrock · RAG</span></div>
+            <div class="skill-item"><span class="skill-name">TensorFlow · PyTorch</span></div>
+            <div class="skill-item"><span class="skill-name">Scikit-learn · Pandas</span></div>
+            <div class="skill-item"><span class="skill-name">OpenSearch</span></div>
+            <div class="skill-item"><span class="skill-name">MLOps · LLM Prompt Engineering</span></div>
+            <div class="skill-item"><span class="skill-name">BERT / NLP</span></div>
+          </div>
+        </div>
+
+        <!-- Databases -->
+        <div class="skill-category reveal">
+          <div class="skill-category-header">
+            <div class="skill-category-icon">🗄️</div>
+            <h3>Databases</h3>
+          </div>
+          <div class="skill-list">
+            <div class="skill-item"><span class="skill-name">DynamoDB</span></div>
+            <div class="skill-item"><span class="skill-name">PostgreSQL · MySQL</span></div>
+            <div class="skill-item"><span class="skill-name">MongoDB</span></div>
+            <div class="skill-item"><span class="skill-name">Redis</span></div>
+            <div class="skill-item"><span class="skill-name">SQL Server</span></div>
+          </div>
+        </div>
+
+        <!-- Frontend -->
+        <div class="skill-category reveal reveal-delay-1">
+          <div class="skill-category-header">
+            <div class="skill-category-icon">🎨</div>
+            <h3>Frontend</h3>
+          </div>
+          <div class="skill-list">
+            <div class="skill-item"><span class="skill-name">Angular</span></div>
+            <div class="skill-item"><span class="skill-name">React · React Native</span></div>
+            <div class="skill-item"><span class="skill-name">Redux · NgRx</span></div>
+            <div class="skill-item"><span class="skill-name">HTML5 · CSS3</span></div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <div class="section-divider"></div>
+
+  <!-- ===================== CERTIFICATIONS ===================== -->
+  <section class="certifications" id="certifications">
+    <div class="container">
+      <div class="section-header reveal">
+        <h2>Certifications</h2>
+        <p>Industry-recognized credentials validating cloud and process expertise.</p>
+      </div>
+      <div class="certs-grid">
+
+        <div class="cert-card reveal">
+          <div class="cert-image">
+            <img src="certificates/aws-saa.jpg" alt="AWS Certified Solutions Architect Associate" loading="lazy">
+          </div>
+          <div class="cert-info">
+            <h3>AWS Certified Solutions Architect Associate</h3>
+            <span class="cert-provider">
+              <svg class="icon" style="width:13px;height:13px;"><use href="#icon-award"></use></svg>
+              Amazon Web Services
+            </span>
+          </div>
+        </div>
+
+        <div class="cert-card reveal reveal-delay-1">
+          <div class="cert-image">
+            <img src="certificates/sixsigma-whitebelt.jpg" alt="Six Sigma White Belt" loading="lazy">
+          </div>
+          <div class="cert-info">
+            <h3>Six Sigma White Belt</h3>
+            <span class="cert-provider">
+              <svg class="icon" style="width:13px;height:13px;"><use href="#icon-award"></use></svg>
+              Six Sigma
+            </span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <div class="section-divider"></div>
+
+  <!-- ===================== ACHIEVEMENTS ===================== -->
+  <section class="achievements" id="achievements">
+    <div class="container">
+      <div class="section-header reveal">
+        <h2>Research & Achievements</h2>
+        <p>Published research in AI and financial systems, academic honours, and professional recognition.</p>
+      </div>
+      <div class="achievements-grid">
+
+        <div class="achievement-card reveal">
+          <span class="achievement-year">2025</span>
+          <p class="achievement-type">Research Publication</p>
+          <h3>Optimizing Grocery Store Layouts Using AI</h3>
+          <p class="achievement-institution">IRJMETS International Research Journal</p>
+          <p>Applied Reinforcement Learning and Genetic Algorithms to optimize retail store layout configurations for improved customer flow and revenue.</p>
+          <a href="https://www.irjmets.com/paperdetail.php?paperId=bfa6dcaeca50e680e9542173b96f37b4" target="_blank" rel="noopener noreferrer" class="achievement-link">
+            View Publication <svg class="icon" style="width:14px;height:14px;"><use href="#icon-external-link"></use></svg>
+          </a>
+        </div>
+
+        <div class="achievement-card reveal reveal-delay-1">
+          <span class="achievement-year">2025</span>
+          <p class="achievement-type">Research Publication</p>
+          <h3>Low-Light Image Enhancement Methodologies</h3>
+          <p class="achievement-institution">TIJER International Research Journal</p>
+          <p>Analyzed and compared state-of-the-art methodological approaches for enhancing image quality in low-light conditions.</p>
+          <a href="https://tijer.org/tijer/viewpaperforall.php?paper=TIJER2503077" target="_blank" rel="noopener noreferrer" class="achievement-link">
+            View Publication <svg class="icon" style="width:14px;height:14px;"><use href="#icon-external-link"></use></svg>
+          </a>
+        </div>
+
+        <div class="achievement-card reveal reveal-delay-2">
+          <span class="achievement-year">2025</span>
+          <p class="achievement-type">Research Publication</p>
+          <h3>Balanced Financial Planner Algorithm</h3>
+          <p class="achievement-institution">TIJER International Research Journal</p>
+          <p>Proposed a dynamic algorithm for automated personal financial management, balancing savings, investments, and expenditures.</p>
+          <a href="https://tijer.org/tijer/viewpaperforall.php?paper=TIJER2502033" target="_blank" rel="noopener noreferrer" class="achievement-link">
+            View Publication <svg class="icon" style="width:14px;height:14px;"><use href="#icon-external-link"></use></svg>
+          </a>
+        </div>
+
+        <div class="achievement-card reveal reveal-delay-3">
+          <span class="achievement-year">2024</span>
+          <p class="achievement-type">Academic Honour</p>
+          <h3>Dean's List of Honour</h3>
+          <p class="achievement-institution">Seattle University</p>
+          <p>Recognised for outstanding academic performance throughout the M.S. Computer Science program.</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <div class="section-divider"></div>
+
+  <!-- ===================== CONTACT ===================== -->
+  <section class="contact" id="contact">
+    <div class="container">
+      <div class="section-header reveal">
+        <h2>Let's Build Something Great Together</h2>
+        <p>Have a project in mind or want to discuss opportunities? I'd love to hear from you.</p>
+      </div>
+      <div class="contact-grid">
+
+        <div class="contact-info reveal">
+          <p>
+            I'm always open to discussing new opportunities, innovative projects, or ways to leverage technology for meaningful impact. Whether you're looking for an experienced engineer or just want to connect — reach out!
+          </p>
+          <div class="contact-cards">
+            <div class="contact-card">
+              <div class="contact-card-icon">
+                <svg class="icon" style="width:20px;height:20px;color:var(--accent);"><use href="#icon-mail"></use></svg>
+              </div>
+              <div class="contact-card-content">
+                <h4>Email</h4>
+                <a href="mailto:mujtabak65@gmail.com">mujtabak65@gmail.com</a>
+              </div>
+            </div>
+            <div class="contact-card">
+              <div class="contact-card-icon">
+                <svg class="icon" style="width:20px;height:20px;color:var(--accent);"><use href="#icon-phone"></use></svg>
+              </div>
+              <div class="contact-card-content">
+                <h4>Phone</h4>
+                <a href="tel:+12063750135">+1 (206) 375-0135</a>
+              </div>
+            </div>
+            <div class="contact-card">
+              <div class="contact-card-icon">
+                <svg class="icon" style="width:20px;height:20px;color:var(--accent);"><use href="#icon-map-pin"></use></svg>
+              </div>
+              <div class="contact-card-content">
+                <h4>Location</h4>
+                <p>Seattle, Washington, USA</p>
+              </div>
+            </div>
+          </div>
+          <div class="contact-social">
+            <a href="https://github.com/mkhan6678" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+              <svg class="icon" style="width:20px;height:20px;"><use href="#icon-github"></use></svg>
+            </a>
+            <a href="https://linkedin.com/in/mujtaba-abdul-haque-984109281/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+              <svg class="icon" style="width:20px;height:20px;"><use href="#icon-linkedin"></use></svg>
+            </a>
+            <a href="mailto:mujtabak65@gmail.com" aria-label="Email">
+              <svg class="icon" style="width:20px;height:20px;"><use href="#icon-mail"></use></svg>
+            </a>
+          </div>
+        </div>
+
+        <form class="contact-form reveal reveal-delay-1" id="contactForm">
+          <div class="form-row">
+            <div class="form-group">
+              <label for="contactName">Name</label>
+              <input type="text" id="contactName" name="name" placeholder="Your name" required>
+            </div>
+            <div class="form-group">
+              <label for="contactEmail">Email</label>
+              <input type="email" id="contactEmail" name="email" placeholder="your@email.com" required>
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="contactSubject">Subject</label>
+            <input type="text" id="contactSubject" name="subject" placeholder="What's this about?">
+          </div>
+          <div class="form-group">
+            <label for="contactMessage">Message</label>
+            <textarea id="contactMessage" name="message" placeholder="Tell me about your project or opportunity..." required></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary">
+            <svg class="icon" style="width:18px;height:18px;"><use href="#icon-send"></use></svg>
+            Send Message
+          </button>
+        </form>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== FOOTER ===================== -->
+  <footer class="footer" id="footer">
+    <div class="container">
+      <div class="footer-left">
+        <p>© 2026 <span class="gold-text">Mujtaba Khan</span>. All rights reserved.</p>
+      </div>
+      <div class="footer-links">
+        <a href="https://github.com/mkhan6678" target="_blank" rel="noopener noreferrer">GitHub</a>
+        <a href="https://linkedin.com/in/mujtaba-abdul-haque-984109281/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+        <a href="mailto:mujtabak65@gmail.com">Email</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Back to Top -->
+  <button class="back-to-top" id="backToTop" aria-label="Back to top">
+    <svg class="icon" style="width:22px;height:22px;"><use href="#icon-chevron-up"></use></svg>
+  </button>
+
+  <!-- JavaScript -->
+  <script src="main.js"></script>
+</body>
+</html>
